@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SSS</title>
+		<link rel="stylesheet" type="text/css" href="{{url_for('static',filename = 'imp.css')}}">
+		<style type="text/css">
+			body{
+				background:url("https://stmed.net/sites/default/files/bark-wallpapers-27771-4214403.jpg") no-repeat;
+				background-size: cover;
+				/*border-radius: px;*/
+				font-family: sans-serif;
+				color: white;
+				}
+			ul{
+				float: left;
+				width: 200px;
+				height:300px;
+				margin: 150px;
+				padding: 0px;
+				list-style: none;
+				display: left;
+				}
+			ul li {
+					/*margin: 500px;*/
+				margin: 9px;
+				border-radius: 50px;
+				float: right;
+				width: 200px;
+				height: 40px;
+				text-decoration-color: black;
+				background-color: white;
+				opacity: .8;
+				line-height: 39px;
+				text-align: center;
+				font-size: 20px;
+		</style>	
+	</head>
+		<body>	
+			<center>
+				<ul>			
+					<div class="food">
+						<center><li><a href="{{url_for('food_table')}}">Food</a></li></center>
+					</div>
+					<div class="trip">
+						<li><a href="">TRIP</a></li>
+					</div>
+					<div class="hangout">
+						<li><a href="">Hangout</a></li>
+					</div>
+				</ul>
+			</center>
+		</body>
+</html>
